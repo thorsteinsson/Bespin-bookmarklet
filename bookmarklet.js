@@ -224,6 +224,8 @@
 						// show button
 						selectedText = string;
 						button.css({top: evt.pageY + 'px', left: evt.pageX + 'px'}).fadeIn();
+					} else {
+						button.hide();
 					}
 				}).bind('keyup', function(e) {
 					if (e.keyCode === 27) { // ESC
