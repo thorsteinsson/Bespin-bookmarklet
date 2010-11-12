@@ -189,16 +189,16 @@
 				button.bind('click', function(evt) {
 					if (selectedText) {
 						button.hide();
-						current = $('<div><div>').css({
-						  display: 'block',
-						  position: 'absolute',
-						  left: 0,
-						  top: 0,
-						  width: '100%',
-						  height: $(window).height(),
-						  overflow: 'hidden',
-						  height: '100%'}).appendTo('body');
-						var elem = current.text(selectedText)[0];
+						current = $('<div><textarea/><div>').css({
+							display: 'block',
+							position: 'absolute',
+							left: 0,
+							top: 0,
+							width: '100%',
+							height: '100%',
+							overflow: 'hidden'
+						}).appendTo('body');
+						var elem = current.find('textarea').css({display: 'block', width: '100%', height: $(window).height()}).val(selectedText)[0];
 						bespin.useBespin(elem, {
 							stealFocus: true,
 							syntax: 'js'
