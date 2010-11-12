@@ -219,7 +219,7 @@
 				}
 
 				$(document).bind('mouseup', function (evt) {
-					var string = getSelectedText();
+					var string = getSelectedText() + '';
 					if (string.length > 0) {
 						// show button
 						selectedText = string;
