@@ -220,7 +220,7 @@
 
 				$(document).bind('mouseup', function (evt) {
 					var string = getSelectedText();
-					if (string !== "") {
+					if (string.length > 0) {
 						// show button
 						selectedText = string;
 						button.css({top: evt.pageY + 'px', left: evt.pageX + 'px'}).fadeIn();
