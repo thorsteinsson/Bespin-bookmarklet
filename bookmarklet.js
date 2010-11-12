@@ -1,3 +1,7 @@
+
+// Code modified by Ægir Þorsteinsson <aegir@thorsteinsson.is>
+// http://github.com/thorsteinsson/bespin-bookmarklet/
+
 /* ***** BEGIN LICENSE BLOCK *****
  * Version: MPL 1.1/GPL 2.0/LGPL 2.1
  *
