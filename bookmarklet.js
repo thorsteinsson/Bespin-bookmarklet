@@ -196,7 +196,8 @@
 							top: 0,
 							width: '100%',
 							height: '100%',
-							overflow: 'hidden'
+							overflow: 'hidden',
+							'z-index': 11
 						}).appendTo('body');
 						var elem = current.find('textarea').css({display: 'block', width: '100%', height: $(window).height()}).val(selectedText)[0];
 						bespin.useBespin(elem, {
