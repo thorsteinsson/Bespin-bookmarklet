@@ -182,7 +182,8 @@
 						display: 'none',
 						position: 'absolute',
 						margin: 0,
-						padding:0
+						padding:0,
+						'z-index': 10
 					}).attr('src', base + 'bespin-logo.png').appendTo('body');
 				
 				button.bind('click', function(evt) {
